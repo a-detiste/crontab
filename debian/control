@@ -46,3 +46,20 @@ Description: process scheduling daemon
  This cron package does not provide any system maintenance tasks. Basic
  periodic maintenance tasks are provided by other packages, such 
  as checksecurity.
+
+Package: crontab
+Architecture: any
+Depends:
+    ${shlibs:Depends},
+    ${misc:Depends},
+    debianutils (>= 1.7),
+    adduser,
+    lsb-base (>= 3.0-10),
+    libpam-runtime (>= 1.0.1-11)
+Conflicts: cron
+Priority: extra
+Description: standalone crontab editor
+ This package only contains the crontab editor from the cron package
+ .
+ This can be used with alternative cron daemons,
+ like systemd-cron.
