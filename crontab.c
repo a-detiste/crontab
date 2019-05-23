@@ -609,6 +609,8 @@ edit_cmd() {
 "# at 5 a.m every week with:\n"
 "# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/\n"
 "# \n"
+"# This file needs to end with an empty line\n"
+"# \n"
 "# For more information see the manual pages of crontab(5) and cron(8)\n" 
 "# \n"
 "# m h  dom mon dow   command\n" );
